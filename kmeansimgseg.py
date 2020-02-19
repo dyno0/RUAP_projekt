@@ -2,7 +2,9 @@ import numpy as np
 import cv2
 from sklearn.cluster import KMeans
 
-slika = cv2.imread('/home/student/Downloads/ruap/images/tomandjerry.jpg')
+pic = input("Ime slike:")
+path = "images/" + pic
+slika = cv2.imread(path)
 h, w = slika.shape[:2]
 
 slika = cv2.cvtColor(slika, cv2.COLOR_BGR2LAB)
